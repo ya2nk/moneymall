@@ -1,12 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Frontend\FrontPagesController;
-use Illuminate\Support\Facades\Auth;
-
 /*
 |--------------------------------------------------------------------------
-| Web Routes - Frontend routes.
+| Web Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -14,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes();
-Route::get( '/', [ FrontPagesController::class, 'index' ] )->name( 'index' );
-Route::get("page/{slug}",[FrontPagesController::class,"getPageBySlug"]);
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+    Route::group(['prefix' => 'slider','as' => 'slider.'],function() {
+        Route::get('/', 'SliderController@index')->name('index');
+    });
+});

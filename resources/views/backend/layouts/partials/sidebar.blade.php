@@ -204,6 +204,34 @@
                     </li>
                 @endif
 
+                @if($user->can('slider.view') || $user->can('slider.create'))
+                <li class="sidebar-item ">
+                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                        <i class="mdi mdi-view-list"></i>
+                        <span class="hide-menu">Sliders </span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse first-level {{ (Route::is('admin.slider.index') || Route::is('admin.slider.create') || Route::is('admin.slider.edit')) ? 'in' : null }}">
+                        @if ($user->can('blog.view'))
+                            <li class="sidebar-item">
+                                <a href="{{ route('admin.slider.index') }}" class="sidebar-link {{ (Route::is('admin.slider.index') || Route::is('admin.slider.edit')) ? 'active' : null }}">
+                                    <i class="mdi mdi-view-list"></i>
+                                    <span class="hide-menu"> Slider List </span>
+                                </a>
+                            </li>
+                        @endif
+
+                        @if ($user->can('blog.create'))
+                            <li class="sidebar-item">
+                                <a href="{{ route('admin.blogs.create') }}" class="sidebar-link {{ Route::is('admin.blogs.create') ? 'active' : null }}">
+                                    <i class="mdi mdi-plus-circle"></i>
+                                    <span class="hide-menu"> New Slider </span>
+                                </a>
+                            </li>
+                        @endif
+                    </ul>
+                </li>
+                @endif
+
                 @if ($user->can('contact.view') || $user->can('contact.create'))
                     <li class="sidebar-item ">
                         <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
