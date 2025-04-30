@@ -17,7 +17,7 @@
                 @if ($user->can('dashboard.view'))
                 <li class="sidebar-item">
                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('admin.index') }}" aria-expanded="false">
-                        <i class="mdi mdi-creation"></i>
+                        <i class="mdi mdi-view-dashboard"></i>
                         <span class="hide-menu">Dashboard</span>
                     </a>
                 </li>
@@ -153,28 +153,7 @@
                 </li>
                 @endif
 
-                @if ($user->can('booking_request.view') || $user->can('booking_request.edit') || $user->can('booking_request.delete'))
-                @php
-                    $count_pending_booking_request = \Modules\Booking\Entities\BookingRequest::where('status', 'pending')->count();
-                @endphp
-                <li class="sidebar-item ">
-                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                        <i class="mdi mdi-application"></i>
-                        <span class="hide-menu">Booking Requests </span>
-                        {{ " " }}<span class="badge badge-warning">{{ $count_pending_booking_request }}</span>
-                    </a>
-                    <ul aria-expanded="false" class="collapse first-level {{ (Route::is('admin.booking_request.index') || Route::is('admin.booking_request.create') || Route::is('admin.booking_request.edit')) ? 'in' : null }}">
-                        @if ($user->can('booking_request.view'))
-                        <li class="sidebar-item">
-                            <a href="{{ route('admin.booking_request.index') }}" class="sidebar-link {{ (Route::is('admin.booking_request.index') || Route::is('admin.booking_request.edit')) ? 'active' : null }}">
-                                <i class="mdi mdi-view-list"></i>
-                                <span class="hide-menu"> Request List <span class="badge badge-warning">{{ $count_pending_booking_request }}</span> </span>
-                            </a>
-                        </li>
-                        @endif
-                    </ul>
-                </li>
-                @endif
+                
 
                 @if ($user->can('blog.view') || $user->can('blog.create'))
                     <li class="sidebar-item ">
@@ -207,7 +186,7 @@
                 @if($user->can('slider.view') || $user->can('slider.create'))
                 <li class="sidebar-item ">
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                        <i class="mdi mdi-view-list"></i>
+                        <i class="mdi mdi-image-multiple"></i>
                         <span class="hide-menu">Sliders </span>
                     </a>
                     <ul aria-expanded="false" class="collapse first-level {{ (Route::is('admin.slider.index') || Route::is('admin.slider.create') || Route::is('admin.slider.edit')) ? 'in' : null }}">
@@ -222,7 +201,7 @@
 
                         @if ($user->can('blog.create'))
                             <li class="sidebar-item">
-                                <a href="{{ route('admin.blogs.create') }}" class="sidebar-link {{ Route::is('admin.blogs.create') ? 'active' : null }}">
+                                <a href="{{ route('admin.slider.create') }}" class="sidebar-link {{ Route::is('admin.slider.create') ? 'active' : null }}">
                                     <i class="mdi mdi-plus-circle"></i>
                                     <span class="hide-menu"> New Slider </span>
                                 </a>

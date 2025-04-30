@@ -12,7 +12,7 @@
 <!-- ============================================================== -->
 <div class="container-fluid">
     <h4>
-        Hello, <strong>{{ Auth::user()->first_name .' '. Auth::user()->last_name }}</strong> Welcome to Lara CMS.
+        Hello, <strong>{{ Auth::user()->first_name .' '. Auth::user()->last_name }}</strong> Welcome to {{ getSetting('general','name') }}.
     </h4>
     <p>
         Check at the left side or at the bottom to get your menus...
