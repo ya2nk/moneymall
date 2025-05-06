@@ -15,5 +15,10 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 Auth::routes();
-Route::get( '/', [ FrontPagesController::class, 'index' ] )->name( 'index' );
-Route::get("page/{slug}",[FrontPagesController::class,"getPageBySlug"]);
+
+Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']],function() {
+    Route::get( '/', [ FrontPagesController::class, 'index' ] )->name( 'index' );
+    Route::get("page/{slug}",[FrontPagesController::class,"getPageBySlug"]);
+});
+
+
