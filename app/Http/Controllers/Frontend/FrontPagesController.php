@@ -17,7 +17,7 @@ class FrontPagesController extends Controller
      */
     public function index()
     {
-        return view('frontend.pages.index');
+        return view('frontend.home');
     }
 
     public function getPageBySlug($slug)

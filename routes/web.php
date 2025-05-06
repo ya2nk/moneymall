@@ -18,7 +18,7 @@ Auth::routes();
 
 Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']],function() {
     Route::get( '/', [ FrontPagesController::class, 'index' ] )->name( 'index' );
-    Route::get("page/{slug}",[FrontPagesController::class,"getPageBySlug"]);
+    
 });
 
 
