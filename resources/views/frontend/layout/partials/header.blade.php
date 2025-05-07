@@ -11,13 +11,23 @@
           </div>
           <div class="d-flex justify-content-end">
             <div class="d-flex align-items-center">
-              <span class="text-1">Follow Us </span>
+              <span class="text-1">@lang('fe.follow_us')</span>
             </div>
             <div class="d-flex align-items-center mx-2">
               @include('frontend.layout.partials.social')
-              <select>
+              
+               
+                <div class="dropdown">
+                  <button class="btn btn-primary dropdown-toggle bg-transparent border-0 dark-grey" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fi fi-{{ LaravelLocalization::getCurrentLocaleShort() }}"></i> {{ LaravelLocalization::getCurrentLocaleName() }}
+                  </button>
+                  <ul class="dropdown-menu">
+                    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                    <li><a class="dropdown-item" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"><i class="fi fi-{{ $properties['short'] }}"></i> {{ $properties['native'] }}</a></li>
+                    @endforeach
+                  </ul>
+                </div>
                 
-              </select>
             </div>
             </div>
           </div>

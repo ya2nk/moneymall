@@ -18,7 +18,8 @@ Auth::routes();
 
 Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']],function() {
     Route::get( '/', [ FrontPagesController::class, 'index' ] )->name( 'index' );
-    
+    Route::get( 'articles', [ FrontPagesController::class, 'articles' ] )->name( 'articles' );
+    Route::get( 'trading-support', [ FrontPagesController::class, 'tradingSupport' ] )->name( 'trading-support' );
 });
 
 

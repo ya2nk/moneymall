@@ -24,5 +24,6 @@
 <!-- Main CSS File -->
 <link href="{{ asset('fe/assets/css/main.css') }}" rel="stylesheet">
 <link href="{{ asset('fe/assets/css/anim-slider.css') }}" rel="stylesheet">
-
 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.11.1/css/flag-icons.min.css" rel="stylesheet">

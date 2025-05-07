@@ -164,7 +164,7 @@ class PagesController extends Controller
                         return '<span class="badge badge-warning">Inactive</span>';
                     }
                 });
-            $rawColumns = ['action', 'title', 'status', 'category', 'banner_image', 'image'];
+            $rawColumns = ['action', 'title', 'status', 'category', 'banner_image', 'image','lang'];
             return $datatable->rawColumns($rawColumns)
                 ->make(true);
         }
@@ -201,6 +201,7 @@ class PagesController extends Controller
 
         $request->validate([
             'title'  => 'required|max:100',
+            'lang'  => 'required',
             'slug'  => 'nullable|max:100|unique:pages,slug',
             'image'  => 'nullable|image',
             'banner_image'  => 'nullable|image'
@@ -224,6 +225,7 @@ class PagesController extends Controller
                 $page->image = UploadHelper::upload('image', $request->image, $request->title . '-' . time() . '-logo', 'public/assets/images/pages');
             }
 
+            $page->lang = $request->lang;
             $page->category_id = $request->category_id;
             $page->article_type_id = $request->article_type_id;
             $page->status = $request->status;
@@ -303,11 +305,13 @@ class PagesController extends Controller
         $request->validate([
             'title'  => 'required|max:100',
             'slug'  => 'required|max:100|unique:pages,slug,' . $page->id,
+            'lang' => 'required'
         ]);
 
         try {
             DB::beginTransaction();
             $page->title = $request->title;
+            $page->lang = $request->lang;
             $page->slug = $request->slug;
             $page->status = $request->status;
             if (!is_null($request->banner_image)) {

@@ -18,27 +18,8 @@
 <script src='https://vchouliaras.github.io/jquery.animateSlider.js/js/modernizr.js'></script>
 <!-- Load the plugin -->
 <script src='https://vchouliaras.github.io/jquery.animateSlider.js/js/jquery.animateSlider.js'></script>
+
 @stack('scripts')
 <script>
-$(".anim-slider").animateSlider(
-                {
-                    autoplay	:true,
-                    interval	:5000,
-                    animations 	: 
-                {
-                    0	: 	//Slide No1
-                    {
-                        ".anim-title"	: 
-                        {
-                            show   	  : "bounceIn",
-                            hide 	  : "flipOutX",
-                            delayShow : "delay1s"
-                            },
-                        
-                            
-                    },
-                    
-                    
-                }
-    });
+   
 </script>

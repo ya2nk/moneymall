@@ -14,6 +14,7 @@
                 <thead>
                     <tr>
                         <th>Sl</th>
+                        <th>Language</th>
                         <th>Name</th>
                         <th>Category</th>
                         <th>Featured Image</th>
@@ -40,6 +41,7 @@
         buttons: ['excel', 'pdf', 'print'],
         columns: [
             {data: 'DT_RowIndex', name: 'DT_RowIndex'},
+            {data: 'lang', name: 'lang'},
             {data: 'title', name: 'title'},
             {data: 'category', name: 'category'},
             {data: 'banner_image', name: 'banner_image'},

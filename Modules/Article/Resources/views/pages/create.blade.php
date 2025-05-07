@@ -71,6 +71,19 @@
                                     </select>
                                 </div>
                             </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label" for="lang">Language <span></label>
+                                    <br>
+                                    <select class="form-control custom-select select2" id="language" name="lang"
+                                        style="width: 100%;">
+                                        <option value="">Select</option>
+                                        @foreach (@foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties))
+                                            <option value="{{ $localCode }}">{{ $properties['native'] }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="row ">

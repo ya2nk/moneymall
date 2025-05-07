@@ -20,6 +20,16 @@ class FrontPagesController extends Controller
         return view('frontend.home');
     }
 
+    public function articles()
+    {
+        return view('frontend.articles');
+    }
+
+    public function tradingSupport()
+    {
+        return view('frontend.trading-support');
+    }
+
     public function getPageBySlug($slug)
     {
         return response(Page::where('slug',$slug)->first());
