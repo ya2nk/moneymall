@@ -45,6 +45,9 @@
 <script src="{{ asset('public/assets/backend/js/tinymce/tinymce.min.js') }}"></script>
 <!-- Tiny MCE JS -->
 
+<!-- Notiflix -->
+<script src="{{ asset('public/assets/backend/js/notiflix/dist/notiflix-aio-3.2.8.min.js') }}"></script>
+<!-- Notiflix -->
 
 <!-- Dropify JS -->
 <script src="{{ asset('public/assets/backend/js/dropify/js/dropify.min.js') }}"></script>

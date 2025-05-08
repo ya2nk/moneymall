@@ -24,6 +24,10 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/backend/js/toaster/toastr.min.css') }}">
 <!-- Toaster CSS -->
 
+<!-- Notiflix CSS -->
+<link rel="stylesheet" type="text/css" href="{{ asset('public/assets/backend/js/notiflix/notiflix-3.2.8.min.css') }}">
+<!-- Notiflix CSS -->
+
 <!-- Select2 CSS -->
 <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/backend/js/select2/select2.min.css') }}">
 <!-- Select2 CSS -->

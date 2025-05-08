@@ -29,3 +29,28 @@ tinymce.init({
   toolbar:
     "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print media fullpage | forecolor backcolor emoticons | code preview",
 });
+
+$.ajaxSetup({
+  headers: {
+    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  }
+  
+});
+
+function notifyBlockOpen() {
+  Notiflix.Block.hourglass("body");
+}
+
+function notifyBlockClose() {
+  Notiflix.Block.remove("body");
+}
+
+function notifySuccess(message) {
+  Notiflix.Notify.success(message);
+}
+
+function notifyError(message) {
+  Notiflix.Notify.failure(message);
+}
+
+

@@ -3,5 +3,6 @@
     "Article": true,
     "Service": true,
     "Booking": true,
-    "Slider": true
+    "Slider": true,
+    "Calendar": true
 }

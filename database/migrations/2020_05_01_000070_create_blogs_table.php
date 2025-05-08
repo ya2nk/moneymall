@@ -18,6 +18,8 @@ class CreateBlogsTable extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->string('image')->nullable();
+            $table->string('banner_image')->nullable();
+            $table->string('lang');
             $table->text('description');
             $table->text('meta_description')->nullable();
             $table->boolean('status')->default(1)->comment('1=>active, 0=>inactive');
