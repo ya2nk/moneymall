@@ -20,6 +20,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'lo
     Route::get( '/', [ FrontPagesController::class, 'index' ] )->name( 'index' );
     Route::get( 'articles', [ FrontPagesController::class, 'articles' ] )->name( 'articles' );
     Route::get( 'trading-support', [ FrontPagesController::class, 'tradingSupport' ] )->name( 'trading-support' );
+    Route::get( 'download', [ FrontPagesController::class, 'download' ] )->name( 'download' );
+    Route::get( 'contact', [ FrontPagesController::class, 'contact' ] )->name( 'contact' );
 });
 
 

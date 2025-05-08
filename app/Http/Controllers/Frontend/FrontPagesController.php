@@ -30,6 +30,16 @@ class FrontPagesController extends Controller
         return view('frontend.trading-support');
     }
 
+    public function download()
+    {
+        return view('frontend.download');
+    }
+
+    public function contact()
+    {
+        return view('frontend.contact');
+    }
+
     public function getPageBySlug($slug)
     {
         return response(Page::where('slug',$slug)->first());
