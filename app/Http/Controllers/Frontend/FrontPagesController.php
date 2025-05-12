@@ -30,6 +30,11 @@ class FrontPagesController extends Controller
         return view('frontend.trading-support');
     }
 
+    public function tradingSupportCalendar()
+    {
+        return view('frontend.trading-support-calendar');
+    }
+
     public function download()
     {
         return view('frontend.download');

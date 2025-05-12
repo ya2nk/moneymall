@@ -37,7 +37,7 @@
           <div class="card-body p-3">
             <p class="contact-form-head">CONTACT US</p>
             <p class="contact-form-subhead">Have questions or need expert guidance? We’re here to help you!</p>
-            <form>
+            <form >
               <div class="form-group row">
                 <div class="col-md-12">
                   <input type="text" placeholder="Full Name">

@@ -59,15 +59,16 @@
       </div>
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Medicio</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
-      </div>
+    <div class="container copyright mt-4">
+      <div class="row">
+        <div class="col-lg-6 text-start">
+          
+          © 2025 PT Gatra Mega Berjangka - Money Mall. All rights reserved
+        </div>
+        <div class="col-lg-6 text-end">
+          <a href="#" class="me-2">General Policy</a> - 
+          <a href="#" class="ms-2">Privacy Policy</a> 
+        </div>
     </div>
 
   </footer>
