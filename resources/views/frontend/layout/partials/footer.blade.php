@@ -19,7 +19,7 @@
           <ul>
             <li><a href="#">Customer Support</a></li>
             <li><a href="#">Email Support</a></li>
-            <li><a href="#">Complaint</a></li>
+            <li><a href="{{ url('policy/complaint') }}">Complaint</a></li>
             
           </ul>
         </div>
@@ -66,8 +66,8 @@
           © 2025 PT Gatra Mega Berjangka - Money Mall. All rights reserved
         </div>
         <div class="col-lg-6 text-end">
-          <a href="#" class="me-2">General Policy</a> - 
-          <a href="#" class="ms-2">Privacy Policy</a> 
+          <a href="{{ url('policy/privacy-policy') }}" class="me-2">Privacy Policy</a> - 
+          <a href="{{ url('policy/general-policy') }}" class="ms-2">General Policy</a> 
         </div>
     </div>
 

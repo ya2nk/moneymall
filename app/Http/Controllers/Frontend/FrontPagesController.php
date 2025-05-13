@@ -49,4 +49,9 @@ class FrontPagesController extends Controller
     {
         return response(Page::where('slug',$slug)->first());
     }
+
+    public function policy($type)
+    {
+        return view('frontend.policy',compact('type'));
+    }
 }
