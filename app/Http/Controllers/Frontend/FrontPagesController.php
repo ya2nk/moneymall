@@ -54,4 +54,9 @@ class FrontPagesController extends Controller
     {
         return view('frontend.policy',compact('type'));
     }
+
+    public function signin()
+    {
+        return view('frontend.signin');
+    }
 }

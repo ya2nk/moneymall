@@ -1417,15 +1417,71 @@ text-align: center;
   margin: 16px 0;
 }
 
-.contact-form input {
+.signin-form input[type=text], .signin-form input[type=email] {
   border: 0;
   outline: 0;
   border-bottom: 2px solid rgb(161, 167, 200);;
-  font-size: 1.4rem;
-  color: #ccc;
+  font-size: 1.2rem;
+  color: rgb(25, 43, 102);
   width: 100%;
   padding: 12px 20px;
-  margin: 16px 0;
+  margin: 14px 0;
+}
+
+.contact-form input[type=text], .contact-form input[type=email] {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid rgb(161, 167, 200);;
+  font-size: 1.2rem;
+  color: rgb(25, 43, 102);
+  width: 100%;
+  padding: 12px 20px;
+  margin: 14px 0;
+}
+
+.user-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  color: rgb(25, 43, 102);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid rgb(161, 167, 200);
+  outline: none;
+  background: transparent;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-toggle-icon i {
+  font-size: 18px;
+  line-height: 1;
+  color: rgb(25, 43, 102);
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.password-toggle-icon i:hover {
+  color: #86a9e9;
+}
+
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #333;
 }
 
 .contact button {
@@ -1472,6 +1528,22 @@ text-align: center;
   order: 0;
   flex-grow: 0;
   margin: 0px 24px;
+}
+
+.signin-form button {
+  /* button */
+  
+  width: 300px;
+  height: 56px;
+  /* Auto layout */
+  
+  padding: 16px 24px 16px 24px;
+  border-radius: 4px;
+  background: rgb(226, 245, 251);
+  color: rgb(92, 131, 167);
+  border: none;
+  /* Inside Auto Layout */
+  
 }
 
 .contact-section {
@@ -1569,4 +1641,8 @@ text-align: center;
   padding: 8px 16px 8px 16px;
   border: 1px solid rgb(35, 160, 219);
   background: rgb(35, 160, 219);
+}
+
+.signin {
+  background: rgb(25, 43, 102);
 }
