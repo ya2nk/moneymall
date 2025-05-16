@@ -15,21 +15,27 @@ class CategoryTableSeeder extends Seeder
     public function run()
     {
         $category = new Category();
-        $category->name = "Life Style";
-        $category->slug = "life-style";
+        $category->name = "Economic Calendar";
+        $category->slug = "economic-calendar";
         $category->parent_category_id = null;
         $category->save();
 
-        $category2 = new Category();
-        $category2->name = "Fashion";
-        $category2->slug = "fashion";
-        $category2->parent_category_id = $category->id;
-        $category2->save();
+        $category = new Category();
+        $category->name = "Pivot";
+        $category->slug = "pivot";
+        $category->parent_category_id = null;
+        $category->save();
 
-        $category3 = new Category();
-        $category3->name = "Earning";
-        $category3->slug = "earning";
-        $category3->parent_category_id = null;
-        $category3->save();
+        $category = new Category();
+        $category->name = "Fibonacci";
+        $category->slug = "fibonacci";
+        $category->parent_category_id = null;
+        $category->save();
+
+        $category = new Category();
+        $category->name = "Closing Price";
+        $category->slug = "closing-price";
+        $category->parent_category_id = null;
+        $category->save();
     }
 }

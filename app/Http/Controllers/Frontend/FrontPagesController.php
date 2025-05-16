@@ -54,9 +54,19 @@ class FrontPagesController extends Controller
     {
         return view('frontend.policy',compact('type'));
     }
-
+    
     public function tradingSupportByType($type)
     {
         return view('frontend.trading-support-item',compact('type'));
+    }
+
+    public function signin()
+    {
+        return view('frontend.signin');
+    }
+
+    public function register()
+    {
+        return view('frontend.register');
     }
 }

@@ -11,11 +11,7 @@
 |
 */
 Route::group(['prefix' => 'admin', 'as' => 'admin.','middleware' => 'auth'], function () {
-    Route::prefix('calendar')->group(function() {
-        Route::get('/', 'CalendarController@index');
-        Route::post('data', 'CalendarController@data');
-        Route::get('row', 'CalendarController@row');
-        Route::post('save', 'CalendarController@save');
-        Route::post('delete', 'CalendarController@delete');
+    Route::prefix('member')->group(function() {
+        Route::get('/', 'MemberController@index');
     });
 });

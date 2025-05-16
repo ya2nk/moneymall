@@ -4,5 +4,6 @@
     "Service": true,
     "Booking": true,
     "Slider": true,
-    "Calendar": true
+    "Calendar": true,
+    "Member": true
 }

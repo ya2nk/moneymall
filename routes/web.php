@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Frontend\FrontPagesController;
+use App\Http\Controllers\Frontend\ { FrontPagesController, AuthController };
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -27,6 +27,12 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'lo
     Route::get( 'trading-support/{type}', [ FrontPagesController::class, 'tradingSupportByType' ] )->name( 'trading-support.type' );
     
     Route::get( 'policy/{type}',[FrontPagesController::class, 'policy' ] )->name('policy');
+
+    Route::get("signin",[FrontPagesController::class, "signin"])->name("signin");
+    Route::post("signin",[AuthController::class,"signin"])->name("signin.post");
+
+    Route::get("register",[FrontPagesController::class, "register"])->name("register");
+    Route::post("register",[AuthController::class,"register"])->name("register.post");
 });
 
 
