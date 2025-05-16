@@ -12,7 +12,7 @@ use App\Http\Controllers\Backend\ContactsController;
 use App\Http\Controllers\Backend\CacheController;
 use App\Http\Controllers\Backend\LanguagesController;
 use App\Http\Controllers\Backend\SettingsController;
-
+use App\Http\Controllers\Backend\PolicyController;
 /*
 |--------------------------------------------------------------------------
 | Backend Routes
@@ -76,6 +76,11 @@ Route::group(['prefix' => 'settings'], function () {
     Route::get('/', [SettingsController::class, 'index'])->name('settings.index');
     Route::put('/update', [SettingsController::class, 'update'])->name('settings.update');
     Route::resource('languages', LanguagesController::class);
+});
+
+Route::group(['prefix' => 'policy'], function () {
+    Route::post('save', [PolicyController::class, 'save'])->name('policy.save');
+    Route::get('/{type}', [PolicyController::class, 'index'])->name('policy.index');
 });
 
 

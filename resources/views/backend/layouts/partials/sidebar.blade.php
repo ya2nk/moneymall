@@ -68,7 +68,7 @@
                     </ul>
                 </li>
                 @endcan
-
+                <!-- 
                 @if ($user->can('category.view') || $user->can('category.create'))
                 <li class="sidebar-item ">
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
@@ -96,19 +96,19 @@
                     </ul>
                 </li>
                 @endif
-
+                -->
                 @if ($user->can('page.view') || $user->can('page.create'))
                 <li class="sidebar-item ">
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                         <i class="mdi mdi-tag-text-outline"></i>
-                        <span class="hide-menu">Article/Pages </span>
+                        <span class="hide-menu">Pages </span>
                     </a>
                     <ul aria-expanded="false" class="collapse first-level {{ (Route::is('admin.pages.index') || Route::is('admin.pages.create') || Route::is('admin.pages.edit')) ? 'in' : null }}">
                         @if ($user->can('page.view'))
                         <li class="sidebar-item">
                             <a href="{{ route('admin.pages.index') }}" class="sidebar-link {{ (Route::is('admin.pages.index') || Route::is('admin.pages.edit')) ? 'active' : null }}">
                                 <i class="mdi mdi-view-list"></i>
-                                <span class="hide-menu"> Article/Page List </span>
+                                <span class="hide-menu"> Page List </span>
                             </a>
                         </li>
                         @endif
@@ -117,7 +117,7 @@
                         <li class="sidebar-item">
                             <a href="{{ route('admin.pages.create') }}" class="sidebar-link {{ Route::is('admin.pages.create') ? 'active' : null }}">
                                 <i class="mdi mdi-plus-circle"></i>
-                                <span class="hide-menu"> New Article/Page </span>
+                                <span class="hide-menu"> New Page </span>
                             </a>
                         </li>
                         @endif
@@ -153,20 +153,50 @@
                 </li>
                 @endif
 
+                <li class="sidebar-item ">
+                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                        <i class="mdi mdi-arrow-right-drop-circle"></i>
+                        <span class="hide-menu">Policy </span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse first-level {{ (Route::is('admin.services.index') || Route::is('admin.services.create') || Route::is('admin.services.edit')) ? 'in' : null }}">
+                        
+                        <li class="sidebar-item">
+                            <a href="{{ url('admin/policy/privacy-policy') }}" class="sidebar-link {{ (Request::is('admin/policy/privacy-policy')) ? 'active' : null }}">
+                                <i class="mdi mdi-view-list"></i>
+                                <span class="hide-menu"> Privacy policy </span>
+                            </a>
+                        </li>
+                        
+                        <li class="sidebar-item">
+                            <a href="{{ url('admin/policy/general-policy') }}" class="sidebar-link {{ Request::is('admin/policy/general-policy') ? 'active' : null }}">
+                                <i class="mdi mdi-view-list"></i>
+                                <span class="hide-menu"> General Policy </span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="{{ url('admin/policy/complaint') }}" class="sidebar-link {{ Request::is('admin/policy/complaint') ? 'active' : null }}">
+                                <i class="mdi mdi-view-list"></i>
+                                <span class="hide-menu"> Complaint </span>
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </li>
                 
 
                 @if ($user->can('blog.view') || $user->can('blog.create'))
                     <li class="sidebar-item ">
                         <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                             <i class="mdi mdi-view-list"></i>
-                            <span class="hide-menu">Blogs </span>
+                            <span class="hide-menu">Article </span>
                         </a>
                         <ul aria-expanded="false" class="collapse first-level {{ (Route::is('admin.blogs.index') || Route::is('admin.blogs.create') || Route::is('admin.blogs.edit')) ? 'in' : null }}">
                             @if ($user->can('blog.view'))
                                 <li class="sidebar-item">
                                     <a href="{{ route('admin.blogs.index') }}" class="sidebar-link {{ (Route::is('admin.blogs.index') || Route::is('admin.blogs.edit')) ? 'active' : null }}">
                                         <i class="mdi mdi-view-list"></i>
-                                        <span class="hide-menu"> Blog List </span>
+                                        <span class="hide-menu"> Article List </span>
                                     </a>
                                 </li>
                             @endif
@@ -175,7 +205,7 @@
                                 <li class="sidebar-item">
                                     <a href="{{ route('admin.blogs.create') }}" class="sidebar-link {{ Route::is('admin.blogs.create') ? 'active' : null }}">
                                         <i class="mdi mdi-plus-circle"></i>
-                                        <span class="hide-menu"> New Blog </span>
+                                        <span class="hide-menu"> New Article </span>
                                     </a>
                                 </li>
                             @endif

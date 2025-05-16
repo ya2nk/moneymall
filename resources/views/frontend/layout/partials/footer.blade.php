@@ -37,23 +37,17 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Download</h4>
           <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
+            <li><a href="#">MM Trader Desktop</a></li>
+            <li><a href="#">MM Trader App</a></li>
+            <li><a href="#">Business Proposal</a></li>
+            <li><a href="#">Trading Hours</a></li>
+            
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
-          </ul>
+          <h4>Money Mall Subscription</h4>
+          
         </div>
 
       </div>
@@ -62,7 +56,6 @@
     <div class="container copyright mt-4">
       <div class="row">
         <div class="col-lg-6 text-start">
-          
           © 2025 PT Gatra Mega Berjangka - Money Mall. All rights reserved
         </div>
         <div class="col-lg-6 text-end">

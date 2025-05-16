@@ -7,7 +7,10 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
           <li class="breadcrumb-item"><a href="{{ url('trading-support') }}">Trading Support</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Economic Calendar</li>
+          <li class="breadcrumb-item @if(!request()->segment(2)) active" @endif aria-current="page">@if(request()->segment(2)) <a href="{{ url('trading-support/economic-calendar') }}">Economic Calendar</a>   @else Economic Calendar @endif</li>
+          @if(request()->segment(2))
+            <li class="breadcrumb-item active" aria-current="page">{{ @$row->title }}</li>
+          @endif
         </ol>
     </nav>
 

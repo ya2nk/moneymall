@@ -29,9 +29,10 @@ class DashboardsController extends Controller
      */
     public function index()
     {
-        if (is_null($this->user) || !$this->user->can('dashboard.view')) {
-            $message = 'You are not allowed to access this page !';
-            return view('errors.403', compact('message'));
+        if (is_null($this->user)) {
+            //$message = 'You are not allowed to access this page !';
+            //return view('errors.403', compact('message'));
+            return redirect()->route('admin.login');
         }
 
         $count_admins = count(Admin::select('id')->get());
