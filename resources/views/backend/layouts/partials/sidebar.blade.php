@@ -158,7 +158,7 @@
                         <i class="mdi mdi-arrow-right-drop-circle"></i>
                         <span class="hide-menu">Policy </span>
                     </a>
-                    <ul aria-expanded="false" class="collapse first-level {{ (Route::is('admin.services.index') || Route::is('admin.services.create') || Route::is('admin.services.edit')) ? 'in' : null }}">
+                    <ul aria-expanded="false" class="collapse first-level {{ Request::is('admin/policy/*') ? 'in' : null }}">
                         
                         <li class="sidebar-item">
                             <a href="{{ url('admin/policy/privacy-policy') }}" class="sidebar-link {{ (Request::is('admin/policy/privacy-policy')) ? 'active' : null }}">

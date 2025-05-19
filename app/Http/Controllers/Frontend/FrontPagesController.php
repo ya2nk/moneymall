@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Modules\Article\Entities\Page;
+use View;
 
 class FrontPagesController extends Controller
 {
@@ -17,7 +18,7 @@ class FrontPagesController extends Controller
      */
     public function index()
     {
-        return view('frontend.home');
+       return view('frontend.home');
     }
 
     public function articles()
@@ -68,5 +69,10 @@ class FrontPagesController extends Controller
     public function register()
     {
         return view('frontend.register');
+    }
+
+    public function about()
+    {
+        return view('frontend.about');
     }
 }

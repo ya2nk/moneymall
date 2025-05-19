@@ -123,71 +123,71 @@
         <div class="col-md-3">
           <div class="card border-blue">
             <div class="card-body p-4">
-              <table width="100%">
-                <tr>
-                  <td><span class="product-item-head">Black</span>
-                    
-                  </td>
-                  <td rowspan="2" align="right">
-                    <img src="{{ asset('fe/assets/img/pack-black.png') }}">
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="product-item-subhead">Strategy</span>
-                  </td>
-                </tr>
-               
-              </table>
-              <hr>
-              <div class="d-flex justify-content-between mb-3">
-                <div class="product-item-content-left">
-                  Lot Transaction
-                </div>
-                <div><span class="dark-grey fw-lighter">Minimum</span> <span class="product-item-content-left">0.1</span></div>
-              </div>
-              <div class="d-flex justify-content-between mb-3">
-                <div class="product-item-content-left">
-                  Forex Spread
-                </div>
-                <div><span class="dark-grey fw-lighter">Start From</span> <span class="product-item-content-left">25</span></div>
-              </div>
-              <div class="d-flex justify-content-between mb-3">
-                <div class="product-item-content-left">
-                  XAU Spread
-                </div>
-                <div><span class="dark-grey fw-lighter">Start From</span> <span class="product-item-content-left">40</span></div>
-              </div>
-              <div class="d-flex justify-content-between mb-3">
-                <div class="product-item-content-left">
-                  Commission/Lot
-                </div>
-                <div><span class="product-item-content-left">11</span></div>
-              </div>
-              <div class="d-flex justify-content-between mb-3">
-                <div class="product-item-content-left">
-                  Leverage
-                </div>
-                <div><span class="product-item-content-left">1:400</span></div>
-              </div>
-              <div class="d-flex justify-content-between mb-3">
-                <div class="product-item-content-left">
-                  Autocut
-                </div>
-                <div><span class="product-item-content-left">20%</span></div>
-              </div>
-              <hr class="mb-3">
-              <div class="text-start"><a href="#" class="product-item-link">START TRADING 
-                <span class="mx-1"></span>
-                <svg width="55.560547" height="15.060547" viewBox="0 0 55.5605 15.0605" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <desc>
+                <table width="100%">
+                  <tr>
+                    <td><span class="product-item-head">Black</span>
                       
-                  </desc>
-                  <defs/>
-                  <path id="Vector" d="M47.5 0.53L54.5 7.53L47.5 14.53M54.5 7.53L0 7.53" stroke="#23A0DB" stroke-opacity="1.000000" stroke-width="1.500000"/>
-                </svg>
+                    </td>
+                    <td rowspan="2" align="right">
+                      <img src="{{ asset('fe/assets/img/pack-black.png') }}">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="product-item-subhead">Strategy</span>
+                    </td>
+                  </tr>
                 
-                </a>
+                </table>
+                <hr>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Lot Transaction
+                  </div>
+                  <div><span class="dark-grey fw-lighter">Minimum</span> <span class="product-item-content-left">0.1</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Forex Spread
+                  </div>
+                  <div><span class="dark-grey fw-lighter">Start From</span> <span class="product-item-content-left">25</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    XAU Spread
+                  </div>
+                  <div><span class="dark-grey fw-lighter">Start From</span> <span class="product-item-content-left">40</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Commission/Lot
+                  </div>
+                  <div><span class="product-item-content-left">11</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Leverage
+                  </div>
+                  <div><span class="product-item-content-left">1:400</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Autocut
+                  </div>
+                  <div><span class="product-item-content-left">20%</span></div>
+                </div>
+                <hr class="mb-3">
+                <div class="text-start"><a href="#" class="product-item-link">START TRADING 
+                  <span class="mx-1"></span>
+                  <svg width="55.560547" height="15.060547" viewBox="0 0 55.5605 15.0605" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                        
+                    </desc>
+                    <defs/>
+                    <path id="Vector" d="M47.5 0.53L54.5 7.53L47.5 14.53M54.5 7.53L0 7.53" stroke="#23A0DB" stroke-opacity="1.000000" stroke-width="1.500000"/>
+                  </svg>
+                  
+                  </a>
           </div>
           </div>
         </div>
@@ -199,29 +199,29 @@
     <div class="container-fluid mx-xl-5 mt-5">
       <div class="row">
         <div class="col-md-12">
-          <p class="text-start product-head">Ahead of Competition</p>
+          <p class="text-start product-head">@lang('fe.ahead_competition')</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="text-start product-head-big">Market Insights</p>
+          <p class="text-start product-head-big">@lang('fe.market_insights')</p>
         </div>
       </div>
       <div class="mt-5">&nbsp;</div>
       <div class="row mt-5">
         <div class="col-md-3">
-          <p class="marketing-list-text">MARKET TRENDS</p>
-          <p class="marketing-list-text">CLOSING PRICE</p>
-          <p class="marketing-list-text">ECONOMIC CALENDAR</p>
-          <p class="marketing-list-text">TABLE PIVOT</p>
+          <p class="marketing-list-text">@lang('fe.market_trends')</p>
+          <p class="marketing-list-text">@lang('fe.closing_price')</p>
+          <p class="marketing-list-text">@lang('fe.economic_calendar')</p>
+          <p class="marketing-list-text">@lang('fe.table_pivot')</p>
          
         </div>
         <div class="col-md-5">
-          <p class="marketing-content-head">Unlock Market Movement with Fibonacci Tools</p>
-          <p>Explore price movements and predict potential reversals using Fibonacci levels. Whether you're swing trading or scalping, these tools bring precision to your technical game.</p>
+          <p class="marketing-content-head">@lang('fe.fibonacci_tool')</p>
+          <p>@lang('fe.fibonacci_tool_desc')</p>
           <ul class="marketing-list">
-            <li>Retracement & Extension Tools<br>Identify support and resistance levels using Fibonacci sequences.</li>
-            <li>Chart Integration<br>Overlay Fibonacci levels directly on price charts for clarity.</li>
+            <li>@lang('fe.retracement')<br>@lang('fe.retracement_2')</li>
+            <li>@lang('fe.chart')<br>@lang('fe.chart_2')</li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -234,12 +234,12 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-12 text-center">
-          <p class="product-head">Simple Steps</p>
+          <p class="product-head">@lang('fe.simple_steps')</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 text-center">
-          <p class="product-head-big">Money Mall Simplifies Trading: Here's How</p>
+          <p class="product-head-big">@lang('fe.steps_desc')</p>
         </div>
       </div>
       <div class="row mt-5"></div>
@@ -248,8 +248,8 @@
             <div class="card bg-transparent border-0">
               <div class="card-body text-center">
                 <img src="{{ asset('fe/assets/img/illustration.png') }}" class="img-fluid">
-                <p class="mt-4 text-center"><span class="step-text">Step 1</span> - <span class="step-text-2">Choose Your Strategy</span></p>
-                <p class="text-center step-content-text">Define your financial goals and select a strategy that aligns with your investment aspirations. Explore expert-backed plans designed for long-term success.</p>
+                <p class="mt-4 text-center"><span class="step-text">@lang('fe.step') 1</span> - <span class="step-text-2">@lang('fe.choose_your_strategy')</span></p>
+                <p class="text-center step-content-text">@lang('fe.choose_your_strategy_desc')</p>
               </div>
             </div>
           </div>
@@ -257,8 +257,8 @@
             <div class="card bg-transparent border-0">
               <div class="card-body text-center">
                 <img src="{{ asset('fe/assets/img/illustration2.png') }}" class="img-fluid">
-                <p class="mt-4 text-center"><span class="step-text">Step 2</span> - <span class="step-text-2">Consultation</span></p>
-                <p class="text-center step-content-text">Get personalized guidance from our financial experts. Discuss your strategy, analyze market opportunities, and refine your approach with professional insights.</p>
+                <p class="mt-4 text-center"><span class="step-text">@lang('fe.step') 2</span> - <span class="step-text-2">@lang('fe.consultation')</span></p>
+                <p class="text-center step-content-text">@lang('fe.consultation_desc')</p>
               </div>
             </div>
           </div>
@@ -266,8 +266,8 @@
             <div class="card bg-transparent border-0">
               <div class="card-body text-center">
                 <img src="{{ asset('fe/assets/img/illustration3.png') }}" class="img-fluid">
-                <p class="mt-4 text-center"><span class="step-text">Step 3</span> - <span class="step-text-2">Start Trading</span></p>
-                <p class="text-center step-content-text">Execute your investment strategy with confidence. Leverage cutting-edge tools, real-time data, and secure transactions to optimize your trading experience.</p>
+                <p class="mt-4 text-center"><span class="step-text">@lang('fe.step') 3</span> - <span class="step-text-2">@lang('fe.start_trading')</span></p>
+                <p class="text-center step-content-text">@lang('fe.start_trading_desc')</p>
               </div>
             </div>
           </div>
@@ -275,8 +275,8 @@
             <div class="card bg-transparent border-0">
               <div class="card-body text-center">
                 <img src="{{ asset('fe/assets/img/illustration4.png') }}" class="img-fluid">
-                <p class="mt-4 text-center"><span class="step-text">Step 4</span> - <span class="step-text-2">Financial Freedom</span></p>
-                <p class="text-center step-content-text">Reap the rewards of smart investing. Achieve financial independence, expand your portfolio, and enjoy a lifestyle driven by informed decisions.</p>
+                <p class="mt-4 text-center"><span class="step-text">@lang('fe.step') 4</span> - <span class="step-text-2">@lang('fe.financial_freedom')</span></p>
+                <p class="text-center step-content-text">@lang('fe.financial_freedom_desc')</p>
               </div>
             </div>
           </div>
@@ -287,12 +287,12 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-12">
-          <p class="text-start product-head">Trading News</p>
+          <p class="text-start product-head">@lang('fe.trading_news')</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="text-start product-head-big">Latest Update</p>
+          <p class="text-start product-head-big">@lang('fe.latest_update')</p>
         </div>
       </div>
       <div class="row mt-5"></div>

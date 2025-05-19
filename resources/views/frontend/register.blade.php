@@ -63,7 +63,7 @@
                                 </div>
                             </div>
                             <div class="text-center mt-3"><button class="">REGISTER</button></div>
-                            <div class="text-center mt-3">Already a member? <a href="#">SIGN IN HERE!</a></div>
+                            <div class="text-center mt-3">Already a member? <a href="{{ url("signin") }}">SIGN IN HERE!</a></div>
                         </form>
                     </div>
                     

@@ -27,8 +27,8 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>About Us</h4>
           <ul>
-            <li><a href="#">company Profile</a></li>
-            <li><a href="#">Legality</a></li>
+            <li><a href="{{ url('about') }}">company Profile</a></li>
+            <li><a href="{{ url('about') }}">Legality</a></li>
             <li><a href="#">Product</a></li>
             
           </ul>
@@ -47,7 +47,17 @@
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Money Mall Subscription</h4>
-          
+          <p>Join 3000+ newsletter subscriber</p>
+          <div class="row">
+            <form>
+              <div class="col-md-8">
+                <input type="email">
+              </div>
+              <div class="col-md-4">
+                <button>SEND</button>
+              </div>
+            </form>
+          </div>
         </div>
 
       </div>

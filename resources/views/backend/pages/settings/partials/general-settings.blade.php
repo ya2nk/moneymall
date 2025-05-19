@@ -73,4 +73,58 @@
             <textarea class="form-control" rows="3" id="meta_description" name="meta_description">{{ $settings->general->meta_description }}</textarea>
         </div>
     </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label" for="meta_description">
+                Desktop App Link
+            </label>
+             <input type="text" class="form-control" id="desktop_app_link" name="desktop_app_link" placeholder="Enter Desktop App Link."
+                value="{{ $settings->general->desktop_app_link }}" />
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label" for="meta_description">
+                Android App Link
+            </label>
+             <input type="text" class="form-control" id="android_app_link" name="android_app_link" placeholder="Enter Playstore App Link."
+                value="{{ $settings->general->android_app_link }}" />
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label" for="meta_description">
+                Ios App Link
+            </label>
+             <input type="text" class="form-control" id="ios_app_link" name="ios_app_link" placeholder="Enter AppStore App Link."
+                value="{{ $settings->general->ios_app_link }}" />
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label" for="meta_description">
+                Business Proposal Link
+            </label>
+             <input type="text" class="form-control" id="business_proposal_link" name="business_proposal_link" placeholder="Enter Business Proposal Link."
+                value="{{ $settings->general->business_proposal_link }}" />
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label" for="meta_description">
+                Brochure Link
+            </label>
+             <input type="text" class="form-control" id="brochure_link" name="brochure_link" placeholder="Enter Brochure Link."
+                value="{{ $settings->general->brochure_link }}" />
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label" for="meta_description">
+                Trading Hours Link
+            </label>
+             <input type="text" class="form-control" id="trading_hours_link" name="trading_hours_link" placeholder="Enter Trading Hours Link."
+                value="{{ $settings->general->trading_hours_link }}" />
+        </div>
+    </div>
 </div>

@@ -7,10 +7,10 @@
             <div class="row">
                 <div class="col-lg-6 p-4">
                     <div class="d-sm-flex justify-content-start flex-column">
-                        <h1 class="text-white anim-title text-start">Closing Price</h1>
-                        <p class="text-white text-start">Gain clarity on daily price movements with accurate and timely closing price data. Whether you're assessing volatility or refining your strategy, these figures are vital for end-of-day analysis.</p>
+                        <h1 class="text-white anim-title text-start">@lang('support.closing_price')</h1>
+                        <p class="text-white text-start">@lang('support.closing_price_content')</p>
                         <p class="text-start">
-                            <a href="#" class="text-white">View Closing Prices
+                            <a href="{{ url('trading-support/closing-price') }}" class="text-white">@lang('support.closing_price_link')
                                 <svg width="55.560547" height="15.060547" viewBox="0 0 55.5605 15.0605" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <desc>
                                     
@@ -33,10 +33,10 @@
             <div class="row">
                 <div class="col-lg-6 p-4 offset-md-6">
                     <div class="d-sm-flex justify-content-start flex-column">
-                        <h1 class="anim-title text-start">Economic Calendar</h1>
-                        <p class="text-start">Never miss a beat in global finance. Stay informed on major releases and economic indicators that could shift market directions. Timing your moves starts with timing the news.</p>
+                        <h1 class="anim-title text-start">@lang('support.economic_calendar')</h1>
+                        <p class="text-start">@lang('support.economic_calendar_content')</p>
                         <p class="text-start">
-                            <a href="{{ url('trading-support/economic-calendar') }}" class="">View Economic Calendar
+                            <a href="{{ url('trading-support/economic-calendar') }}" class="">@lang('support.economic_calendar_link')
                                 <svg width="55.560547" height="15.060547" viewBox="0 0 55.5605 15.0605" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <desc>
                                     
@@ -59,9 +59,9 @@
             <div class="row">
                 <div class="col-lg-6 p-4">
                     <div class="d-sm-flex justify-content-start flex-column">
-                        <h1 class="text-white anim-title text-start">Pivot Table</h1>
-                        <p class="text-white text-start">Turn complex market data into actionable insights. Our table pivot tools let you slice, sort, and visualize financial data with ease — perfect for traders and analysts alike.</p>
-                        <p class="text-start"><a href="#" class="text-white">View Pivot Table
+                        <h1 class="text-white anim-title text-start">@lang('support.pivot_table')</h1>
+                        <p class="text-white text-start">@lang('support.pivot_table_content')</p>
+                        <p class="text-start"><a href="{{ url('trading-support/pivot-table') }}" class="text-white">@lang('support.pivot_table_link')
                           <svg width="55.560547" height="15.060547" viewBox="0 0 55.5605 15.0605" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                           <desc>
                               
@@ -84,10 +84,10 @@
             <div class="row">
                 <div class="col-lg-6 p-4 offset-md-6">
                     <div class="d-sm-flex justify-content-start flex-column">
-                        <h1 class="anim-title text-start">Fibonacci</h1>
-                        <p class="text-start">Explore price movements and predict potential reversals using Fibonacci levels. Whether you're swing trading or scalping, these tools bring precision to your technical game.</p>
+                        <h1 class="anim-title text-start">@lang('fibonacci')</h1>
+                        <p class="text-start">@lang('fibonacci_content')</p>
                         <p class="text-start">
-                            <a href="#" class="">View Fibonacci Levels
+                            <a href="{{ url('trading-support/fibonacci') }}" class="">@lang('fibonacci_link')
                                 <svg width="55.560547" height="15.060547" viewBox="0 0 55.5605 15.0605" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <desc>
                                     

@@ -1630,7 +1630,7 @@ text-align: center;
   text-align: left;
   text-transform: uppercase; 
   position: relative;
-  width: 172px;
+  width: fit-content;
   height: 32px;
   /* Auto layout */
   display: flex;
@@ -1648,5 +1648,18 @@ text-align: center;
 }
 
 .register {
+  background: rgb(241, 247, 249);
+}
+
+.box-about {
+  background-color: rgb(226, 245, 251);
+  padding:20px;
+}
+
+.color-blue {
+  color:rgb(35, 160, 219);
+}
+
+.color-blue-light {
   background: rgb(241, 247, 249);
 }

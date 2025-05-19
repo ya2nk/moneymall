@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
-
+use View;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -25,5 +25,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+        //View::share("meta_description",@getSetting('general','meta_description'));
+        //View::share("meta_keywords",@getSetting('general','meta_keywords'));
     }
 }

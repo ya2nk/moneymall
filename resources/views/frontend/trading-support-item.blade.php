@@ -7,14 +7,14 @@
             <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
             <li class="breadcrumb-item"><a href="{{ url('trading-support') }}">Trading Support</a></li>
-            <li class="breadcrumb-item @if(!request()->segment(2)) active" @endif aria-current="page">@if(request()->segment(2)) <a href="{{ url('trading-support/economic-calendar') }}">Economic Calendar</a> @else Economic Calendar @endif</li>
-            @if(request()->segment(2))
-                <li class="breadcrumb-item active" aria-current="page">{{ @$row->title }}</li>
+            <li class="breadcrumb-item @if(!request()->segment(4)) active" @endif aria-current="page">@if(request()->segment(4)) <a href="{{ url('trading-support/economic-calendar') }}">{{ ucfirst(str_replace("-"," ",$type)) }}</a> @else {{ ucfirst(str_replace("-"," ",$type)) }} @endif</li>
+            @if(request()->segment(4))
+                <li class="breadcrumb-item active" aria-current="page">{{ request()->segment(4) }}</li>
             @endif
             </ol>
         </nav>
     </div>
-
+    <div class="container pb-4">
     <div class="row mt-5 my-5">
         <div class="col-lg-8">
             <div class="card border-0">
@@ -29,7 +29,7 @@
         </div>
         <div class="col-lg-4">
             <div class="calendar-date">
-                NEW ARCHIVE
+                NEW ARCHIVE {{ strtoupper(str_replace("-"," ",$type)) }}
             </div>
             <div class="card border-0">
                 
@@ -44,6 +44,7 @@
             </div>
             
         </div>
+    </div>
     </div>
 </div>
 @endsection

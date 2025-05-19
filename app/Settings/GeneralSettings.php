@@ -22,6 +22,18 @@ class GeneralSettings extends Settings
 
     public ?string $meta_author;
 
+    public ?string $desktop_app_link;
+
+    public ?string $android_app_link;
+
+    public ?string $ios_app_link;
+
+    public ?string $business_proposal_link;
+
+    public ?string $brochure_link;
+
+    public ?string $trading_hours_link;
+
     public static function group(): string
     {
         return 'general';

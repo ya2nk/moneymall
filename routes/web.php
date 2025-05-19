@@ -22,6 +22,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'lo
     Route::get( 'trading-support', [ FrontPagesController::class, 'tradingSupport' ] )->name( 'trading-support' );
     Route::get( 'download', [ FrontPagesController::class, 'download' ] )->name( 'download' );
     Route::get( 'contact', [ FrontPagesController::class, 'contact' ] )->name( 'contact' );
+    Route::get( 'about', [ FrontPagesController::class, 'about' ] )->name( 'about' );
 
     Route::get( 'trading-support/economic-calendar', [ FrontPagesController::class, 'tradingSupportCalendar' ] )->name( 'trading-support.calendar' );
     Route::get( 'trading-support/{type}', [ FrontPagesController::class, 'tradingSupportByType' ] )->name( 'trading-support.type' );

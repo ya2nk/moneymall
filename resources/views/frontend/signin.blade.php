@@ -6,7 +6,7 @@
 <body class="signin">
     <div class="container">
         <div class="position-relative d-flex align-items-center justify-content-start">
-            <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <a href="{{ url("/") }}" class="logo d-flex align-items-center me-auto">
             <img src="{{ asset('fe/assets/img/logo.webp') }}" class="img-fluid">
             </a>
             <div class="d-flex align-items-center justify-content-end">
@@ -51,7 +51,7 @@
                         </div>
                         <div class="text-center"><a href="#">FORGOT PASSWORD</a></div>
                         <div class="text-center mt-3"><button class="">SIGN IN</button></div>
-                        <div class="text-center mt-3">Doesn’t have an account? <a href="#">Sign up here!</a></div>
+                        <div class="text-center mt-3">Doesn’t have an account? <a href="{{ url('register') }}">Sign up here!</a></div>
                     </form>
                     </div>
                     

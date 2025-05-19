@@ -9,8 +9,10 @@ class PolicyController extends Controller
 {
     function index($type)
     {
+        $lang = $req->input('lang_q','en');
+        $data['lang'] = $lang;
         $data['type'] = $type;
-        $data['row']  = Policy::where('type',$type)->first();
+        $data['row']  = Policy::where('type',$type)->where('lang',$lang)->first();
         return view('backend.pages.policy.index',$data);
     }
 

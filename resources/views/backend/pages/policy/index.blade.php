@@ -9,7 +9,7 @@
     <div class="container-fluid">
         @include('backend.layouts.partials.messages')
         <div class="create-page">
-            <form action="{{ route('admin.policy.store') }}" method="POST"  data-parsley-validate data-parsley-focus="first">
+            <form action="{{ route('admin.policy.save') }}" method="POST"  data-parsley-validate data-parsley-focus="first">
                 @csrf
                 <input type="hidden" name="type" value="{{ $type }}">
                 <div class="form-body">
@@ -26,10 +26,10 @@
                                     <label class="control-label" for="lang">Language <span></label>
                                     <br>
                                     <select class="form-control custom-select select2" id="language" name="lang"
-                                        style="width: 100%;" required="">
+                                        style="width: 100%;" required="" onchange="changeLanguage(this.value)">
                                         <option value="">Select</option>
-                                        @foreach (@foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties))
-                                            <option value="{{ $localCode }}" @if($row && $row->lang == $localCode) selected @endif>{{ $properties['native'] }}</option>
+                                        @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                            <option value="{{ $localeCode }}" @if(($row && $row->lang == $localeCode) || request()->lang_q == $localeCode) selected @endif>{{ $properties['native'] }}</option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -47,7 +47,7 @@
                                 <div class="form-actions">
                                     <div class="card-body">
                                         <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
-                                        <a href="{{ route('admin.policy.index') }}" class="btn btn-dark">Cancel</a>
+                                        <a href="{{ url('admin/policy/'.$type) }}" class="btn btn-dark">Cancel</a>
                                     </div>
                                 </div>
                             </div>
@@ -64,6 +64,8 @@
 
 @section('scripts')
     <script>
-    
+        changeLanguage(value) {
+            location.href = `?lang_q=${value}`
+        }
     </script>
 @endsection

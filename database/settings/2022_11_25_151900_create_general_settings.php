@@ -14,5 +14,11 @@ class CreateGeneralSettings extends SettingsMigration
         $this->migrator->add('general.meta_keywords', '');
         $this->migrator->add('general.meta_description', '');
         $this->migrator->add('general.meta_author', '');
+        $this->migrator->add('general.desktop_app_link', '');
+        $this->migrator->add('general.android_app_link', '');
+        $this->migrator->add('general.ios_app_link', '');
+        $this->migrator->add('general.business_proposal_link', '');
+        $this->migrator->add('general.brochure_link', '');
+        $this->migrator->add('general.trading_hours_link', '');
     }
 }

@@ -80,7 +80,7 @@ Route::group(['prefix' => 'settings'], function () {
 
 Route::group(['prefix' => 'policy'], function () {
     Route::post('save', [PolicyController::class, 'save'])->name('policy.save');
-    Route::get('/{type}', [PolicyController::class, 'index'])->name('policy.index');
+    Route::get('/{type}', [PolicyController::class, 'index']);
 });
 
 

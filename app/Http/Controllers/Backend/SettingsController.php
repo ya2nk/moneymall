@@ -66,6 +66,12 @@ class SettingsController extends Controller
             $this->general->meta_keywords    = $request->meta_keywords;
             $this->general->meta_description = $request->meta_description;
             $this->general->meta_author      = $request->meta_author;
+            $this->general->desktop_app_link = $request->desktop_app_link;
+            $this->general->android_app_link = $request->android_app_link;
+            $this->general->ios_app_link = $request->ios_app_link;
+            $this->general->business_proposal_link = $request->business_proposal_link;
+            $this->general->brochure_link = $request->brochure_link;
+            $this->general->trading_hours_link = $request->trading_hours_link;
             $this->general->save();
 
             // Contact settings update.

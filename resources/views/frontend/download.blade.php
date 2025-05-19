@@ -7,12 +7,12 @@
                 <div class="col-lg-7 py-5">
                     <div class="d-sm-flex justify-content-start flex-column">
                         <h1 class="text-white download-title text-start">MM Trader 4 - Desktop</h1>
-                        <p class="text-white text-start">MetaTrader 4 is a platform for trading Forex, analyzing financial markets and using Expert Advisors. Mobile trading, Trading Signals and the Market are the integral parts of MetaTrader 4 that enhance your Forex trading experience.</p>
+                        <p class="text-white text-start">@lang('download.desktop_content')</p>
                         
                         <div>
                             <svg width="170.000000" height="48.000000" viewBox="0 0 170 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <desc>
-                                        Created with Pixso.
+                                       
                                 </desc>
                                 <defs/>
                                 <path id="Vector" d="M24 9.59L24 22.2L42 22.2L42 6L24 9.59Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
@@ -25,8 +25,8 @@
                             
                         </div>
                         <div class="mt-3">
-                            <button type="button" class="btn btn-white btn-hover-default">Download Basic <i class="fa fa-caret-right ms-2"></i></button>
-                            <button type="button" class="btn btn-white btn-hover-default ms-4">Download Multi <i class="fa fa-caret-right ms-2"></i></button>
+                            <a href="#" class="btn btn-white btn-hover-default">@lang('download.desktop_download_basic') <i class="fa fa-caret-right ms-2"></i></a>
+                            <a href="#" class="btn btn-white btn-hover-default ms-4">@lang('download.desktop_download_multi') <i class="fa fa-caret-right ms-2"></i></a>
                         </div>
                     
                     </div>
@@ -40,7 +40,7 @@
                 <div class="col-lg-7 py-5 offset-md-5">
                     <div class="d-sm-flex justify-content-start flex-column">
                         <h1 class="download-title-2 text-start">MM Trader 4 - App</h1>
-                        <p class="text-default text-start">MetaTrader 4 is a platform for trading Forex, analyzing financial markets and using Expert Advisors. Mobile trading, Trading Signals and the Market are the integral parts of MetaTrader 4 that enhance your Forex trading experience.</p>
+                        <p class="text-default text-start">@lang('download.app_content')</p>
                         
                         
                         <div class="mt-3">
@@ -64,30 +64,30 @@
             <div class="row">
                 <div class="col-lg-7 py-5">
                     <div class="d-sm-flex justify-content-start flex-column">
-                        <h1 class="text-white download-title text-start">Documents</h1>
-                        <p class="text-white text-start">These are some supporting documents from PT. Gatra Mega Berjangka (Money Mall). Trustworthy, reliable, and secure futures brokerage.</p>
+                        <h1 class="text-white download-title text-start">@lang('download.document')</h1>
+                        <p class="text-white text-start">@lang('download.document_desc')</p>
                         
                         <div class="row">
                             <div class="col-md-1">
                                 <svg width="38.000000" height="42.385124" viewBox="0 0 38 42.3851" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <desc>
-                                            Created with Pixso.
+                                            
                                     </desc>
                                     <defs/>
                                     <path id="Icon" d="M8 37L5 37C2.79 37 1 35.2 1 33L1 5C1 2.79 2.79 1 5 1L33 1C35.2 1 37 2.79 37 5L37 33C37 35.2 35.2 37 33 37L30 37M19 35C15.68 35 13 32.31 13 29C13 25.68 15.68 23 19 23C22.31 23 25 25.68 25 29C25 32.31 22.31 35 19 35ZM19 35L19.04 34.99L12.65 41.38L7 35.72L13.03 29.68M19 35L25.38 41.38L31.04 35.72L25 29.68M13 9L25 9M9 16L29 16" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
                                 </svg>
                             </div>
                             <div class="col-md-6">
-                                <p class="text-white"><span class="h4 me-2">Business Proposal</span> 
+                                <p class="text-white"><span class="h4 me-2">@lang('download.business_proposal')</span> 
                                     <a href="#"><svg width="64.000000" height="24.000000" viewBox="0 0 64 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <desc>
-                                                Created with Pixso.
+                                                
                                         </desc>
                                         <defs/>
                                         <path id="Vector" d="M51.5 5L58.5 12L51.5 19M58.5 12L4 12" stroke="#23A0DB" stroke-opacity="1.000000" stroke-width="1.500000"/>
                                     </svg>
                                 </a>
-                                <br>Powerpoint Presentation</p>
+                                <br>@lang('download.powerpoint_presentation')</p>
                             </div> 
                                                                                          
                         </div>
@@ -96,7 +96,7 @@
                             <div class="col-md-1">
                                 <svg width="42.000000" height="42.000004" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <desc>
-                                            Created with Pixso.
+                                           
                                     </desc>
                                     <defs/>
                                     <path id="Icon" d="M29 9L15 1L1 9L1 41L15 33L29 41L41 33L41 1L29 9L29 41M15 1L15 33" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
@@ -104,16 +104,16 @@
                                 
                             </div>
                             <div class="col-md-6">
-                                <p class="text-white"><span class="h4 me-2">Brochure</span> 
+                                <p class="text-white"><span class="h4 me-2">@lang('download.brochure')</span> 
                                     <a href="#" class="p-4"><svg width="64.000000" height="24.000000" viewBox="0 0 64 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <desc>
-                                                Created with Pixso.
+                                              
                                         </desc>
                                         <defs/>
                                         <path id="Vector" d="M51.5 5L58.5 12L51.5 19M58.5 12L4 12" stroke="#23A0DB" stroke-opacity="1.000000" stroke-width="1.500000"/>
                                     </svg>
                                 </a>
-                                <br>Print Ready Template</p>
+                                <br>@lang('download.print')</p>
                             </div> 
                                                                  
                         </div>
@@ -122,7 +122,7 @@
                             <div class="col-md-1">
                                 <svg width="42.000000" height="41.993317" viewBox="0 0 42 41.9933" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <desc>
-                                            Created with Pixso.
+                                          
                                     </desc>
                                     <defs/>
                                     <path id="Icon" d="M26 35L30 39L39 30M20.47 40.99C9.67 40.71 1 31.87 1 21C1 9.95 9.95 1 21 1C32.04 1 41 9.95 41 21C41 21.36 40.99 21.73 40.97 22.09M21 9L21 21L28.47 24.73" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
@@ -131,16 +131,16 @@
                                 
                             </div>
                             <div class="col-md-6">
-                                <p class="text-white"><span class="h4 me-2">Trading Hours</span> 
+                                <p class="text-white"><span class="h4 me-2">@lang('download.trading_hours')</span> 
                                     <a href="#" class="p-4"><svg width="64.000000" height="24.000000" viewBox="0 0 64 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <desc>
-                                                Created with Pixso.
+                                             
                                         </desc>
                                         <defs/>
                                         <path id="Vector" d="M51.5 5L58.5 12L51.5 19M58.5 12L4 12" stroke="#23A0DB" stroke-opacity="1.000000" stroke-width="1.500000"/>
                                     </svg>
                                 </a>
-                                <br>Print Ready Template</p>
+                                <br>@lang('download.print')</p>
                             </div> 
                                                                  
                         </div>
