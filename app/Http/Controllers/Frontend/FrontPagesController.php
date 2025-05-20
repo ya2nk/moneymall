@@ -26,6 +26,11 @@ class FrontPagesController extends Controller
         return view('frontend.articles');
     }
 
+    public function articleDetail($slug)
+    {
+        return view('frontend.article-detail');
+    }
+
     public function tradingSupport()
     {
         return view('frontend.trading-support');
@@ -74,5 +79,10 @@ class FrontPagesController extends Controller
     public function about()
     {
         return view('frontend.about');
+    }
+
+    public function promo()
+    {
+        return view('frontend.promo');
     }
 }

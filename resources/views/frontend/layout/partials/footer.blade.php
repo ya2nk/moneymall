@@ -48,16 +48,18 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Money Mall Subscription</h4>
           <p>Join 3000+ newsletter subscriber</p>
-          <div class="row">
-            <form>
-              <div class="col-md-8">
-                <input type="email">
+         
+            <form class="newsletter-form">
+               <div class="row">
+              <div class="col-md-7">
+                <input type="email" placeholder="Email Address">
               </div>
               <div class="col-md-4">
                 <button>SEND</button>
               </div>
+              </div>
             </form>
-          </div>
+          
         </div>
 
       </div>

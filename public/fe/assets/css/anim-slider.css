@@ -16,6 +16,18 @@
   /********Slides**********/
   .anim-title {
     margin-top:100px;
+    font-size: 48px;
+  }
+
+  .anim-title-sub {
+    font-size: 22px;
+    font-weight: 200;
+    color: #dbd6d6;
+  }
+
+  .anim-link {
+    margin-top: 50px;
+    
   }
   /*****Current Slide******/
   .anim-slide-this {
@@ -91,9 +103,17 @@
   
   @media (max-width: 575px) {
     .anim-slider .anim-title {
-      font-size: 14px !important;
-      margin-top: 20px;
+      font-size: 32px !important;
+      margin-top: 60px;
     }
+
+    .anim-title-sub { 
+      font-size: 12px;
+    }
+
+    .anim-link {
+      margin-top: 20px;
+    } 
     .anim-slider p {
       font-size: 12px !important;
     }

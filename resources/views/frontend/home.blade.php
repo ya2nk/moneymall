@@ -1,10 +1,16 @@
 @extends('frontend.layout.main')
 
 @section('content')
+<!--
 <ul class='anim-slider h-auto'>
-    <!-- Slide No1 -->
+    
     <li class='anim-slide'>
       <div class="container">
+       <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
         <div class="p-3 d-flex flex-row justify-content-md-between">
           <div class="d-sm-flex justify-content-start flex-column">
             <h1 class="text-white anim-title text-start">Empower Your Financial Journey</h1>
@@ -34,13 +40,61 @@
 
     <nav class='anim-arrows'>
       <span class='anim-arrows-prev'>
-        <i class='fa fa-angle-left fa-3x'></i>
+        <i class='fa fa-chevron-left fa-2x'></i>
       </span>
       <span class='anim-arrows-next'>
-        <i class='fa fa-angle-right fa-3x'></i>
+        <i class='fa fa-chevron-right fa-2x'></i>
       </span>
     </nav>
   </ul>
+-->
+<style>
+  .carousel-indicators {
+    top: 50px;
+    justify-content: left !important;
+    margin-left: 10%;
+    height: 10px;
+}
+</style>
+<div id="carouselExampleIndicators" class="carousel slide anim-slider">
+  <div class="carousel-indicators container">
+   
+   
+  </div>
+  <div class="carousel-inner container">
+    
+       <div class="carousel-item active">
+        <div class="p-3 d-flex flex-row justify-content-md-between">
+          <div class="d-sm-flex justify-content-start flex-column">
+            <h1 class="text-white anim-title text-start">Empower Your Financial Journey</h1>
+            <span class="anim-title-sub text-start">Start trading with confidence on a platform built for growth, stability, and success.</span>
+            
+            <p class="text-start anim-link"><a href="#" class="text-white">START TRADING NOW <i class="bi bi-arrow-right"></i></a></p>
+              
+           
+          </div>
+          <div class="d-flex justify-content-end flex-sm-row d-none d-sm-block">
+            <div class="bg-image">
+              <img src="{{ asset('fe/assets/img/image255.png') }}" class="img-fluid">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+       
+    
+  </div>
+  <button class="carousel-control-prev d-none d-sm-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next d-none d-sm-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+      
 
   <section id="featured-services" class="featured-services section">
     <div class="container p-5">
@@ -121,7 +175,7 @@
       </div>
       <div class="row mt-5">
         <div class="col-md-3">
-          <div class="card border-blue">
+          <div class="card border-blue rounded-0">
             <div class="card-body p-4">
                 <table width="100%">
                   <tr>
@@ -192,6 +246,226 @@
           </div>
         </div>
       </div>
+
+	  <div class="col-md-3">
+          <div class="card border-blue rounded-0">
+            <div class="card-body p-4">
+                <table width="100%">
+                  <tr>
+                    <td><span class="product-item-head">Gold</span>
+                      
+                    </td>
+                    <td rowspan="2" align="right">
+                      <img src="{{ asset('fe/assets/img/pack-gold.webp') }}">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="product-item-subhead">Strategy</span>
+                    </td>
+                  </tr>
+                
+                </table>
+                <hr>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Lot Transaction
+                  </div>
+                  <div><span class="dark-grey fw-lighter">Minimum</span> <span class="product-item-content-left">0.1</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Forex Spread
+                  </div>
+                  <div><span class="dark-grey fw-lighter">Start From</span> <span class="product-item-content-left">25</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    XAU Spread
+                  </div>
+                  <div><span class="dark-grey fw-lighter">Start From</span> <span class="product-item-content-left">45</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Commission/Lot
+                  </div>
+                  <div><span class="product-item-content-left">1</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Leverage
+                  </div>
+                  <div><span class="product-item-content-left">1:400</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Autocut
+                  </div>
+                  <div><span class="product-item-content-left">20%</span></div>
+                </div>
+                <hr class="mb-3">
+                <div class="text-start"><a href="#" class="product-item-link">START TRADING 
+                  <span class="mx-1"></span>
+                  <svg width="55.560547" height="15.060547" viewBox="0 0 55.5605 15.0605" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                        
+                    </desc>
+                    <defs/>
+                    <path id="Vector" d="M47.5 0.53L54.5 7.53L47.5 14.53M54.5 7.53L0 7.53" stroke="#23A0DB" stroke-opacity="1.000000" stroke-width="1.500000"/>
+                  </svg>
+                  
+                  </a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+	  <div class="col-md-3">
+          <div class="card border-blue rounded-0">
+            <div class="card-body p-4">
+                <table width="100%">
+                  <tr>
+                    <td><span class="product-item-head">platinum</span>
+                      
+                    </td>
+                    <td rowspan="2" align="right">
+                      <img src="{{ asset('fe/assets/img/pack-platinum.webp') }}">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="product-item-subhead">Strategy</span>
+                    </td>
+                  </tr>
+                
+                </table>
+                <hr>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Lot Transaction
+                  </div>
+                  <div><span class="dark-grey fw-lighter">Minimum</span> <span class="product-item-content-left">0.1</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Forex Spread
+                  </div>
+                  <div><span class="dark-grey fw-lighter">Start From</span> <span class="product-item-content-left">9</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    XAU Spread
+                  </div>
+                  <div><span class="dark-grey fw-lighter">Start From</span> <span class="product-item-content-left">18</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Commission/Lot
+                  </div>
+                  <div><span class="product-item-content-left">1</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Leverage
+                  </div>
+                  <div><span class="product-item-content-left">1:400</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Autocut
+                  </div>
+                  <div><span class="product-item-content-left">20%</span></div>
+                </div>
+                <hr class="mb-3">
+                <div class="text-start"><a href="#" class="product-item-link">START TRADING 
+                  <span class="mx-1"></span>
+                  <svg width="55.560547" height="15.060547" viewBox="0 0 55.5605 15.0605" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                        
+                    </desc>
+                    <defs/>
+                    <path id="Vector" d="M47.5 0.53L54.5 7.53L47.5 14.53M54.5 7.53L0 7.53" stroke="#23A0DB" stroke-opacity="1.000000" stroke-width="1.500000"/>
+                  </svg>
+                  
+                  </a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+	  <div class="col-md-3">
+          <div class="card border-blue rounded-0">
+            <div class="card-body p-4">
+                <table width="100%">
+                  <tr>
+                    <td><span class="product-item-head">diamond</span>
+                      
+                    </td>
+                    <td rowspan="2" align="right">
+                      <img src="{{ asset('fe/assets/img/pack-diamond.webp') }}">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="product-item-subhead">Strategy</span>
+                    </td>
+                  </tr>
+                
+                </table>
+                <hr>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Lot Transaction
+                  </div>
+                  <div><span class="dark-grey fw-lighter">Minimum</span> <span class="product-item-content-left">0.1</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Forex Spread
+                  </div>
+                  <div><span class="dark-grey fw-lighter">Start From</span> <span class="product-item-content-left">25</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    XAU Spread
+                  </div>
+                  <div><span class="dark-grey fw-lighter">Start From</span> <span class="product-item-content-left">30</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Commission/Lot
+                  </div>
+                  <div><span class="product-item-content-left">5</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Leverage
+                  </div>
+                  <div><span class="product-item-content-left">1:400</span></div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="product-item-content-left">
+                    Autocut
+                  </div>
+                  <div><span class="product-item-content-left">20%</span></div>
+                </div>
+                <hr class="mb-3">
+                <div class="text-start"><a href="#" class="product-item-link">START TRADING 
+                  <span class="mx-1"></span>
+                  <svg width="55.560547" height="15.060547" viewBox="0 0 55.5605 15.0605" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                        
+                    </desc>
+                    <defs/>
+                    <path id="Vector" d="M47.5 0.53L54.5 7.53L47.5 14.53M54.5 7.53L0 7.53" stroke="#23A0DB" stroke-opacity="1.000000" stroke-width="1.500000"/>
+                  </svg>
+                  
+                  </a>
+          </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -340,26 +614,6 @@
 
 @push('scripts')
 <script>
-  $(".anim-slider").animateSlider(
-    {
-        autoplay	:true,
-        interval	:5000,
-        animations 	: 
-    {
-        0	: 	//Slide No1
-        {
-            ".anim-title"	: 
-            {
-                show   	  : "bounceIn",
-                hide 	  : "flipOutX",
-                delayShow : "delay1s"
-                },
-            
-                
-        },
-        
-        
-    }
-});
+  
 </script>
 @endpush

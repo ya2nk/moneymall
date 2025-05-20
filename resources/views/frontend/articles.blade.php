@@ -17,7 +17,7 @@
                         <div class="articles-hot-title">China retaliates again in Trump's trade war, prompting flight from US assets</div>
                         <div class="articles-hot-content">China is not backing down. On Friday, Beijing announced plans to raise retaliatory tariffs on the United States from 84 percent to 125 percent, to go into effect on Saturday.</div>
                         <div>
-                            <a href="#">view news 
+                            <a href="{{ route('article.detail',['slug' => 'nama-slug']) }}">view news 
                                 <svg width="64.000000" height="24.000000" viewBox="0 0 64 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <desc>
                                     

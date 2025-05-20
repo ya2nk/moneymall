@@ -31,6 +31,7 @@ return [
     'financial_freedom' => 'Kebebasan Finansial',
     'financial_freedom_desc' => 'Dapatkan keuntungan dari investasi yang cerdas. Capai kemandirian finansial, kembangkan portofolio Anda, dan nikmati gaya hidup yang didorong oleh keputusan yang tepat.',
     'trading_news' => 'Berita Trading',
-    'latest_update' => 'Update Terbaru'
+    'latest_update' => 'Update Terbaru',
+    'promo' => 'Promo'
 
 ];

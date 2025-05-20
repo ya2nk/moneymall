@@ -1,4 +1,4 @@
-<header id="header" class="header sticky-top">
+<header id="header" class="header">
     <div class="topbar d-flex align-items-center">
         <div class="container d-flex justify-content-center justify-content-md-between">
           <div class="d-flex justify-content-start">
@@ -32,5 +32,8 @@
             </div>
           </div>
     </div>
-    @include('frontend.layout.partials.navbar')
+    
 </header>
+<div class="sticky-top header">
+      @include('frontend.layout.partials.navbar')
+</div>

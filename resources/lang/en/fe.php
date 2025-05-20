@@ -31,5 +31,6 @@ return [
     'financial_freedom' => 'Financial Freedom',
     'financial_freedom_desc' => 'Reap the rewards of smart investing. Achieve financial independence, expand your portfolio, and enjoy a lifestyle driven by informed decisions.',
     'trading_news' => 'Trading News',
-    'latest_update' => 'Latest Update'
+    'latest_update' => 'Latest Update',
+    'promo' => 'Promo'
 ];

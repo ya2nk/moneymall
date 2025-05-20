@@ -12,11 +12,13 @@
           <li><a href="{{ route('trading-support') }}" class="@if(Route::current()->getName() == 'trading-support') active @endif">@lang('fe.trading_support')</a></li>
           <li><a href="{{ route('download') }}" class="@if(Route::current()->getName() == 'download') active @endif">@lang('fe.download')</a></li>
           <li><a href="{{ route('contact') }}" class="@if(Route::current()->getName() == 'contact') active @endif">@lang('fe.contact')</a></li>
+          <li><a href="{{ route('promo') }}" class="@if(Route::current()->getName() == 'promo') active @endif">@lang('fe.promo')</a></li>
+          <li><span class="text-white cta-btn ms-2" onclick="location.href = '{{ url('signin') }}'"><i class="bi bi-person"></i> MEMBER AREA</span></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn text-white" href="{{ url('signin') }}"><i class="bi bi-person"></i> MEMBER AREA</a>
+      
 
     </div>
 
